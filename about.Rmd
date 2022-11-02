@@ -1,15 +1,104 @@
 ---
-title: "Who Am I?"
+title: "Resume"
 output: 
   html_document:
     toc: true
     toc_float: true
-    theme: cerulean
 ---
+# Summary of Qualifications
+•	Demonstrates effective communication, interpersonal, organizational, and multi-tasking skills and eager to learn new abilities
 
-My name is Justin Vargas and I am a Clinical Research Coordinator within the Department of Surgery at Columbia University Irving Medical Center.  I am also a Master's student, who is in the Pharmaceutical Statistics track, within the Biostatistics Department at the Mailman School of Public Health of Columbia University.  I am a clinical research professional and scholar, who is interested in working with the multidisciplinary aspects of clinical trials and learning about data analytics.  I aspire to work as a Biostatistician or a Data Analyst for pharmaceutical or "big tech" companies in the near future.
+•	Exceptional as an individual and a team member at conducting laboratory tasks and clinical work in a patient care setting
 
-![](images/surgery.png)
+•	Adept in patient data collection, organization, statistical analysis, and efficiently completing administrative duties
 
-![](images/mailman.png)
+•	Knowledgeable about GCP, HIPAA, IRB, and FDA policies and procedures
+
+•	Proficient in R, SAS, Minitab, Word, Excel, PowerPoint, Outlook, OneDrive, Freezerworks, RASCAL, and Epic
+
+•	Relevant Coursework: Introduction to Randomized Clinical Trials, New Drug Development: A Regulatory Overview, Biostatistical Methods I, Principles of Epidemiology I, Introduction to Public Health
+
+# Education
+• Columbia University - Mailman School of Public Health 
+
+New York, NY
+
+May 2020 - Present  
+
+Master of Science: Biostatistics                                                                                                                                                 
+Track: Pharmaceutical Statistics
+
+Cumulative GPA: 4.08
+
+
+• State University of New York College of Environmental Science and Forestry (SUNY-ESF) 
+
+Syracuse, NY 
+
+May 2018
+
+Bachelor of Science: Environmental Biology                                                                                                                                    
+Minor: Applied Statistics
+
+Cumulative GPA: 3.712 (Magna Cum Laude)
+
+Dean’s List: Fall 2015, Fall 2016
+
+President’s List: Spring 2016, Spring 2017, Fall 2017, and Spring 2018 
+
+# Publication 
+• Yu, X., Vargas, J., Green, P. H. R., Bhagat, G. (2021). Innate Lymphoid Cells and Celiac Disease: Current Perspective. Cellular and Molecular Gastroenterology and Hepatology, 11(3), 803-814.
+
+# Training                          
+• Good Clinical Practice (GCP) Training
+
+• HIPAA: Health Insurance Portability Accountability Act Research Training 
+
+• Human Subjects Protection Training | Research with Minors 
+
+• FDA-Regulated Research
+
+• COVID-19 Training
+
+• Biological Safety/Bloodborne Pathogen Training
+
+• Lab Safety, Chemical Hygiene, and Hazardous Waste Management Training
+
+# Professional Experience
+Columbia University Irving Medical Center
+
+New York, NY
+
+- Clinical Research Coordinator 
+
+November 2021 – Present
+
+•	Coordinate day-to-day aspect of study related procedures, including, but not limited to scheduling visits and procedures, data entry, preparation for research visits, research visit documentation, maintenance of regulatory binders and study files, creation and/or maintenance of source documentation, and preparation for monitoring visits, site initiation/closeout visits and audits as needed
+
+•	Clearly and effectively communicate with potential study subjects, clinicians, and other health care providers, ancillary staff, sponsors, and research office staff.
+•	Work with Regulatory Coordinator in submitting new protocols, amendments, renewals and other regulatory bodies
+
+•	Work with Program Coordinator in preparation of study budgets, submitting pharmacy cost estimates, ensuring compliance with research billing and processing stipends for subjects’ participation in studies
+
+
+- Technician B 
+
+January 2019 – Present
+
+●	Perform breath tests for patients to determine the presence of small intestinal bacterial overgrowth or intolerances to digest sugars, such as lactose and fructose, in accordance with COVID-19 safety policies
+
+●	Manage a biobank comprised of IELs, LPLs, PBMCs, and serum samples from over 1000 celiac disease (CD) and IBD patients, and identify and provide samples, which meet the requirements of collaborative studies, to principal investigators
+
+●	Create and submit an IRB protocol and associated documents by communicating with IRB members to initiate a collaboration where pathology slides of CD and IBD patients were gathered for a research laboratory at Rutgers University
+
+●	Isolate and store lymphocyte fractions from human intestinal biopsies and peripheral blood by following laboratory protocols
+
+●	Facilitate the process of obtaining informed consent from patients, collecting participant samples, reviewing consent and HIPAA forms, shipping samples, organizing paper and electronic sample logs, and assisting in the writing of manuscripts 
+
+●	Execute entering clinical information and sample isolation results into a Freezerworks database, cleaning and analyzing sample data, meeting with physicians to update patient data, and creating sample and comprehensive biobank reports
+
+●	Coordinate the ordering of supplies, the improvement of workflow processes, and the repairing of malfunctioning equipment
+
+
+
 
