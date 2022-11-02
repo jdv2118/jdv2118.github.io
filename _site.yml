@@ -7,8 +7,10 @@ navbar:
       href: about.html
     - icon: fa-envelope fa-lg
       href: mailto:justindanielvargas@gmail.com
+    - icon: fa-brands fa-linkedin
+      href: https://www.linkedin.com/in/justin-vargas-10632a248?trk=public_profile_browsemap
     - icon: fa-github fa-lg
       href: http://github.com/jdv2118/
 output:
   html_document:
-    theme: cerulean
+    theme: cosmo
