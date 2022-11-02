@@ -9,6 +9,7 @@ output:
 
 My name is Justin Vargas and I am a Clinical Research Coordinator within the Department of Surgery at Columbia University Irving Medical Center.  I am also a Master's student, who is in the Pharmaceutical Statistics track, within the Biostatistics Department at the Mailman School of Public Health of Columbia University.  I am a clinical research professional and scholar, who is interested in working with the multidisciplinary aspects of clinical trials and learning about data analytics.  I aspire to work as a Biostatistician or a Data Analyst for pharmaceutical or "big tech" companies in the near future.
 
-![](images/cuimc.jpg)
+![](images/surgery.png)
 
+![](images/mailman.png)
 
