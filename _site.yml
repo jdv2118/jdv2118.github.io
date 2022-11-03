@@ -5,6 +5,8 @@ navbar:
   right:
     - text: "Resume"
       href: about.html
+    - text: "Plotly"
+      href: plotly.html
     - icon: fa-envelope fa-lg
       href: mailto:justindanielvargas@gmail.com
     - icon: fa-brands fa-linkedin

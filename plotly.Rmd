@@ -1,0 +1,80 @@
+---
+title: "Plotly"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+# Loading Packages
+
+```{r}
+library(tidyverse)
+
+library(p8105.datasets)
+
+library(plotly)
+```
+
+# Loading Data
+
+```{r}
+data("ny_noaa")
+
+ny_noaa =
+  ny_noaa %>%
+separate(col = date,   into = c("year", "month", "day"), sep = "-", convert = TRUE) %>%
+mutate(
+   year = as.character(year),
+   month = as.character(month),
+   tmax = as.numeric(tmax),
+   tmin = as.numeric(tmin),
+   tmax = tmax / 10,
+   tmin = tmin / 10,
+   prcp = prcp / 10) %>%
+  filter(
+    year == 2000,
+    day %in% 24:31) %>%
+  drop_na(tmax) %>%
+  drop_na(tmin) %>%
+  drop_na(prcp) %>%
+  drop_na(snow) %>%
+  drop_na(snwd)
+ 
+head(ny_noaa)  
+
+```
+
+# Plots Made by Plotly
+
+## Barplot
+```{r}
+ny_noaa %>%
+  count(id) %>%
+  mutate(id = fct_reorder(id, n)) %>%
+  plot_ly(x = ~id,y = ~n, color = ~id, type = "bar", colors = "viridis")
+```
+
+## Boxplot
+
+```{r}
+ny_noaa %>%
+  mutate(Month = fct_reorder(month, tmin)) %>%
+  plot_ly(
+    y = ~tmin, color = ~month,
+    type = "box", colors = "viridis")
+```
+
+## Scatterplot
+
+```{r}
+ny_noaa %>%
+  plot_ly(
+    x = ~prcp, y = ~snow, color = ~day,text = ~id,
+    alpha = .5, type = "scatter", mode  = "markers")
+```
+
+
+
+
+
