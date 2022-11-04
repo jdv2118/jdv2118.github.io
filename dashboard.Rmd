@@ -54,9 +54,9 @@ ny_noaa %>%
   mutate(id = fct_reorder(id, n)) %>%
   plot_ly(x = ~id,y = ~n, color = ~id, type = "bar", colors = "viridis") %>%
   layout(
-    title = "blank title",
-    xaxis = list(title = "blank x axis"),
-    yaxis = list(title = "blank y axis")
+    title = "Counts of Weather Station IDs",
+    xaxis = list(title = "Weather Station ID"),
+    yaxis = list(title = "Count")
   )
 ```
 
@@ -67,14 +67,14 @@ Column {data-width=350}
 
 ```{r, echo = FALSE}
 ny_noaa %>%
-  mutate(month = fct_reorder(month, tmin)) %>%
+  mutate(Month = fct_reorder(month, tmin)) %>%
   plot_ly(
     y = ~tmin, color = ~month,
     type = "box", colors = "viridis") %>%
   layout(
-    title = "blank title",
-    xaxis = list(title = "blank x axis"),
-    yaxis = list(title = "blank y axis")
+    title = "The Minimum Temperature for Each Month in 2000",
+    xaxis = list(title = "Month Number"),
+    yaxis = list(title = "Minimum Temperature (C)")
   )
 ```
 
@@ -86,9 +86,9 @@ ny_noaa %>%
     x = ~prcp, y = ~snow, color = ~day,text = ~id,
     alpha = .5, type = "scatter", mode  = "markers") %>%
   layout(
-    title = "blank title",
-    xaxis = list(title = "blank x axis"),
-    yaxis = list(title = "blank y axis")
+    title = "Precipitation by Snowfall",
+    xaxis = list(title = "Precipitation (mm)"),
+    yaxis = list(title = "Snowfall (mm)")
   )
 ```
 
