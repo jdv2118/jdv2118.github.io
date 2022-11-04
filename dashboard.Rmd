@@ -1,0 +1,94 @@
+---
+title: "Flex Dashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+    theme: cosmo
+---
+
+```{r setup, echo = FALSE, message = FALSE, warning = FALSE}
+library(tidyverse)
+
+library(p8105.datasets)
+
+library(flexdashboard)
+
+library(plotly)
+```
+
+```{r, echo = FALSE}
+data("ny_noaa")
+
+ny_noaa =
+  ny_noaa %>%
+separate(col = date,   into = c("year", "month", "day"), sep = "-", convert = TRUE) %>%
+mutate(
+   year = as.character(year),
+   month = as.character(month),
+   tmax = as.numeric(tmax),
+   tmin = as.numeric(tmin),
+   tmax = tmax / 10,
+   tmin = tmin / 10,
+   prcp = prcp / 10,
+   snow = round((snow * 0.03937 * 4) / 4)) %>%
+  filter(
+    year == 2000,
+    day %in% 24:31) %>%
+  drop_na(tmax) %>%
+  drop_na(tmin) %>%
+  drop_na(prcp) %>%
+  drop_na(snow) %>%
+  drop_na(snwd)
+```
+
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r, echo = FALSE}
+ny_noaa %>%
+  count(id) %>%
+  mutate(id = fct_reorder(id, n)) %>%
+  plot_ly(x = ~id,y = ~n, color = ~id, type = "bar", colors = "viridis") %>%
+  layout(
+    title = "blank title",
+    xaxis = list(title = "blank x axis"),
+    yaxis = list(title = "blank y axis")
+  )
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r, echo = FALSE}
+ny_noaa %>%
+  mutate(month = fct_reorder(month, tmin)) %>%
+  plot_ly(
+    y = ~tmin, color = ~month,
+    type = "box", colors = "viridis") %>%
+  layout(
+    title = "blank title",
+    xaxis = list(title = "blank x axis"),
+    yaxis = list(title = "blank y axis")
+  )
+```
+
+### Chart C
+
+```{r, echo = FALSE}
+ny_noaa %>%
+  plot_ly(
+    x = ~prcp, y = ~snow, color = ~day,text = ~id,
+    alpha = .5, type = "scatter", mode  = "markers") %>%
+  layout(
+    title = "blank title",
+    xaxis = list(title = "blank x axis"),
+    yaxis = list(title = "blank y axis")
+  )
+```
+

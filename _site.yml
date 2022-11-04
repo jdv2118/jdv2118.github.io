@@ -7,6 +7,8 @@ navbar:
       href: about.html
     - text: "Plotly"
       href: plotly.html
+    - text: "Flex Dashboard"
+      href: dashboard.html
     - icon: fa-envelope fa-lg
       href: mailto:justindanielvargas@gmail.com
     - icon: fa-brands fa-linkedin

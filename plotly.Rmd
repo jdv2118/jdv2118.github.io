@@ -8,7 +8,7 @@ output:
 
 # Loading Packages
 
-```{r}
+```{r, message = FALSE, warning = FALSE}
 library(tidyverse)
 
 library(p8105.datasets)
@@ -52,8 +52,15 @@ head(ny_noaa)
 ny_noaa %>%
   count(id) %>%
   mutate(id = fct_reorder(id, n)) %>%
-  plot_ly(x = ~id,y = ~n, color = ~id, type = "bar", colors = "viridis")
+  plot_ly(x = ~id,y = ~n, color = ~id, type = "bar", colors = "viridis") %>%
+  layout(
+    title = "Counts of Weather Station IDs",
+    xaxis = list(title = "Weather Station ID"),
+    yaxis = list(title = "Count")
+  )
 ```
+
+This is a barplot of the counts of weather station IDs during the last 7 or 8 days of every month in the year 2000.
 
 ## Boxplot
 
@@ -62,8 +69,15 @@ ny_noaa %>%
   mutate(Month = fct_reorder(month, tmin)) %>%
   plot_ly(
     y = ~tmin, color = ~month,
-    type = "box", colors = "viridis")
+    type = "box", colors = "viridis") %>%
+  layout(
+    title = "The Minimum Temperature for Each Month in 2000",
+    xaxis = list(title = "Month Number"),
+    yaxis = list(title = "Minimum Temperature (C)")
+  )
 ```
+
+This is a boxplot of the minimum temperature during the last 7 or 8 days of the every month in the year 2000.
 
 ## Scatterplot
 
@@ -71,10 +85,15 @@ ny_noaa %>%
 ny_noaa %>%
   plot_ly(
     x = ~prcp, y = ~snow, color = ~day,text = ~id,
-    alpha = .5, type = "scatter", mode  = "markers")
+    alpha = .5, type = "scatter", mode  = "markers") %>%
+  layout(
+    title = "Precipitation by Snowfall",
+    xaxis = list(title = "Precipitation (mm)"),
+    yaxis = list(title = "Snowfall (mm)")
+  )
 ```
 
-
+This is a scatterplot of precipitation by snowfall during the last 7 or 8 days of every month during the year 2000.
 
 
 
